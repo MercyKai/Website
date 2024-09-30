@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriHealth</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <a href="#index" class="logo">NutriHealth</a>
+
+        <div class="nav-links">
+        <nav>
+            <div class="menu" id="dropdown">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+ </header>
+
+  <section class="content" style="background-image:url(img/41.jpg);">
+
+      <p class="head1">Schedule a Consultation</p>
+      <h2 class="head2">Contact Us</h2>
+      <div class="contact-container">
+      <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+    <label for="service-type">Select Service:</label>
+    <select id="service-type" name="service-type" required>
+        <option value="">Select a Service</option>
+        <option value="Nutrition Consultation">Nutrition Consultation</option>
+        <option value="Weight Management Program">Weight Management Program</option>
+        <option value="Medical Nutrition Therapy">Medical Nutrition Therapy</option>
+        <option value="Sports Nutrition">Sports Nutrition</option>
+        <option value="Meal Planning">Personalized Meal Planning</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+
+      <div class="form-group">
+        <label for="health-goals">Health Goals:</label>
+        <textarea id="health-goals" name="health-goals" rows="3" placeholder="e.g., weight loss, muscle gain, etc." required></textarea>
+      </div>
+
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact-section">
+    <div class="footer-bottom">
+        &copy; 2024 Nutrihealth. All rights reserved.
+    </div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
