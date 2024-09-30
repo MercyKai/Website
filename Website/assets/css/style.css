@@ -329,102 +329,105 @@ textarea {
 .form-group + .form-group {
     margin-top: 20px;
 }
-
-.footer {
-    margin-top: 0; 
-    background-color: white;
-    color: white; 
-    padding: 0;
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
-    box-sizing: border-box;
-    max-height: 100px;
-   /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6); */
-}
-.links-section, .contact-section {
-    width: 45%;
+.footer-container {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  font-size: 15px;
 }
 
-.links-section h2, .contact-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.footer a {
+  color: #fc4e00;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.links-section ul {
-    list-style-type: none;
-    padding: 0;
+.footer a:hover {
+  color: green;
 }
 
-.links-section li {
-    margin-bottom: 10px;
+.footer ul {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #333;
+  list-style-type: none;
+  margin: 0;
 }
 
-.links-section li a {
-    color: white;
-    text-decoration: none;
+.footer li {
+  margin: 10px 0;
 }
 
-.links-section li span {
-    margin-right: 10px;
+.footer span {
+  font-weight: bold;
 }
 
-.contact-section p {
-    margin: 5px 0;
-}
-.footer-top{
-    background-color: blue;
-}
-
-.footer-top .container {
-    display: ;
-    gap: 30px;
+.footer h3 {
+  color: #fc4e00;
+  line-height: 1.5rem;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
-.quick-links {
-    color: white; 
+.footer p {
+  color: #218c66;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.footer-content {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    gap: 0px;
-    max-width: 100%; 
-    margin: 0;
-    color: #f86924;
-    font-size: 15px;
-    background-color: green;    
+.link-row {
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.link-column {
+  display: flex;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-top: 1px solid #333;
+}
+
+.social-row p {
+  color: #218c66;
+  line-height: 15px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.social-column a {
+  text-decoration: none;
+  padding: 10px;
+  color: #218c66;
+  line-height: 20px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  background-color: ;
+}
+
+.social-column a:hover {
+  color: #218c66;
+}
+
+.copyright-column p {
+  margin: 0;
+  font-weight: bold;
+  font-family: calibri,sans-serif;
 
 }
 
-h3{
-    color: #f86924;
-    font-size: 20px;
-}
-
-.quick-links, .social-media, .contact-info {
-    flex: 1;
-    margin: 0 20px; 
-}
-
-.footer-links, .social-links, .contant-links{
-    margin-top: 10px;
-}
-
-.footer-links li,
-.social-links li,
-.contant-links li {
-    margin-top: 10px;
-}
-
-.footer-bottom {
-    text-align: center; 
-    margin-top: 10px;
-    margin-bottom:px;
-    color: #f86924;
-    font-weight: bold;
-}
 
 @media (max-width: 768px) {
 
@@ -468,29 +471,43 @@ h3{
                 width: 100%;
             }
 
-            .footer-content {
-                flex-direction: column; 
-                align-items: center; 
-                padding: 0;
-                margin: 0; 
-            }
-
-            .quick-links, .social-media, .contact-info {
-                margin: 10px 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                margin-top: 10px;
-                margin-bottom: 0;
-                width: 100%;
-    
-            }
-
             .nutrition-form {
                 padding: 20px;
                 max-width: 100%;
             }
 }
+
+@media (max-width: 600px) {
+            .link-column {
+                flex-direction: column;
+                
+            }
+            .link-column ul {
+                padding: 0;
+                margin: 0;
+                max-height: auto;
+                
+            }
+
+            .link-row {
+                flex-direction: column;
+                padding: 5px;
+                
+
+            }
+
+            .footer {
+                padding: 0 20px;
+                
+            }
+
+            .social-row {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .copyright-column p {
+                line-height: 10px;
+            }
+
 
